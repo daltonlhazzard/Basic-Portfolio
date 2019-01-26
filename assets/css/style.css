@@ -2,6 +2,14 @@ html, body{
     height:100%;
 }
 
+html {
+    background-image: url("https://i.pinimg.com/originals/72/a1/84/72a184aa7846cad0d5a82cf55dc3f406.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 * {
     text-align: justify;
     font: #777777;
@@ -38,7 +46,7 @@ img.wrap{
     color: #ffffff;
     text-align: center;
     padding: 20px 15px;
-    background: #4aaaa5;
+    background: rgb(0, 0, 0);
     margin: 0;
   }
 
@@ -64,17 +72,20 @@ img.wrap{
   .inner{
       flex: 1;
       max-width: 960px;
-      max-height: 400px;
+      max-height: 450px; 
+      box-sizing: border-box;
       align-content: center;
       justify-content: center;
-      background: #ffffff;
+      background: #ecececd0;
+      background-size: cover;
   }
 
   #aboutMe{
-      color:#4aaaa5;
+      color: #000000;
       padding-left: 15px;
       padding-bottom: 20px;
       border-bottom: 3px solid #e7e7e7;
+      text-align: center;
   }
 
   header:after{
@@ -83,8 +94,9 @@ img.wrap{
     display: block;
 }
 
-  .aboutMe, .portfolio{
+  .aboutMe, .portfolio {
     padding-left: 15px;
+    text-align: center;
   }
 
   .aboutMe>p{
@@ -94,12 +106,14 @@ img.wrap{
 
 
   footer{
-      color: #ffffff;
-      background: #666666;
+      color: #000000;
+      background: #ffffff;
       text-align: center;
       font-size: 12px;
-      border-top: 6px solid #4aaaa5;
       padding: 30px 0 2px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
   }
 
   .footer{
@@ -123,4 +137,69 @@ img.wrap{
     align-content: center 960px;
     margin-top: 30px;
 
+}
+
+
+
+
+
+mark {
+    background-color: #cfcfcf;
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 10px;
+    text-align: center;
+  }
+  a:visited {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 10px;
+    text-align: center;
+  }
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+    text-align: center;
+  }
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  a:active, a:hover, a:visited, a:link {
+      font-size: 17px;
+      text-align: center;
+  }
+
+
+  .contact{
+    flex: 1;
+    max-width: 800px;
+    max-height: 400px;
+    align-content: center;
+    justify-content: center;
+    
+    
+}
+
+.inner1 {
+    flex: 1;
+    max-width: 800px;
+    max-height: 375px;
+    align-content: center;
+    justify-content: center;
+    background: #ecececd0;
+}
+
+.statement {
+    font-style: italic;
+    text-align: center;
 }
