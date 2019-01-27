@@ -239,3 +239,8 @@ a:link {
         width: 640px
     }
 }
+
+.resume {
+    font-style: italic;
+    text-decoration: underline;
+}
